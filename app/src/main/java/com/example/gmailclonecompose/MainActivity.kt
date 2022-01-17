@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.gmailclonecompose.components.GmailDrawerMenu
 import com.example.gmailclonecompose.components.HomeAppBar
 import com.example.gmailclonecompose.components.HomeBottomMenu
+import com.example.gmailclonecompose.components.MailList
 import com.example.gmailclonecompose.ui.theme.GmailCloneComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -46,7 +47,7 @@ fun GmailApp() {
         bottomBar = {
             HomeBottomMenu()
         }) {
-
+        MailList(paddingValues = (it))
     }
 }
 
