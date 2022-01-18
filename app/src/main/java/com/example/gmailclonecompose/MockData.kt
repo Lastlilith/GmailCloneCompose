@@ -1,5 +1,6 @@
 package com.example.gmailclonecompose
 
+import com.example.gmailclonecompose.model.Account
 import com.example.gmailclonecompose.model.MailData
 
 val mailList = listOf(
@@ -73,4 +74,20 @@ val mailList = listOf(
         body = "We have an opening that suits your profile kindly check it out and indicate your interest",
         timeStamp = "20:10"
     )
+)
+
+val accountList = listOf<Account>(
+    Account(
+        icon = R.drawable.ic_launcher_foreground,
+        userName = "Vladimir Vorozhtcov",
+        email = "lastlilith.2014@gmail.com",
+        unReadMails = 99),
+    Account(
+        userName = "Chris Morty",
+        email = "chris@gmail.com",
+        unReadMails = 80),
+    Account(
+        userName = "Christy Jane",
+        email = "jane@gmail.com",
+        unReadMails = 99)
 )
